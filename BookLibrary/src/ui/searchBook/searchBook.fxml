@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="300.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.searchBook.SearchBookController">
+   <children>
+      <VBox alignment="CENTER" layoutX="64.0" layoutY="58.0" prefHeight="300.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="300.0">
+               <children>
+                  <TextField fx:id="bookInputTitle" onAction="#bookSearchUsingTitle" promptText="Enter Book Title">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin></TextField>
+                  <TextField fx:id="bookInputID" onAction="#bookSearchUsingID" promptText="Enter Book ID">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin></TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+            </HBox>
+            <Text fx:id="bookTitleText" strokeType="OUTSIDE" strokeWidth="0.0">
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="bookIDText" strokeType="OUTSIDE" strokeWidth="0.0">
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="bookAuthorText" strokeType="OUTSIDE" strokeWidth="0.0">
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="bookPublisherText" strokeType="OUTSIDE" strokeWidth="0.0">
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="54.0" text="Back">
+               <VBox.margin>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
