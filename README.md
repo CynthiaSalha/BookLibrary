@@ -16,3 +16,11 @@ When the correct credentials are passed, the user interface shows and it has 6 o
 The Flywieight design pattern was used in this project in order to help reduce the memory usage. For example, instead of storing the characteristics of the book (Title - ID - Author - Publisher - Availability) in seperate String values in the list, we created a sepearte class called Book which holds those characteristics. So every time we create a book, an instance of this class will be created and stored inside a list (which is the Data Structure used).
 
 The aim of this application is to provide the user with a place to store the books and add notes when necessary in order to keep track of their reading journey.
+
+The contributers to this project are:
+
+- Carl El Khoury: He designed the user interface using JavaFX and SceneBuilder, in addition to the css stylesheets.
+- Rita Merhi: She implemented the add book and add notes methods and integrated them with graphical interface.
+- Cynthia Salha: She implemented the view books, view notes, search and settings methods as well as a login screen before accessing the application.
+
+(Note that we learned this language form scratch, so we faced a lot of obsticles and problems)
